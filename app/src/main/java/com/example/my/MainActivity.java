@@ -1,27 +1,44 @@
 package com.example.my;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+
 public class MainActivity extends AppCompatActivity {
    Button btn;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btn=findViewById(R.id.btn);
-         btn.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View view) {
+        FirebaseAuth fAuth = null;
 
-                 Intent intent=new Intent(MainActivity.this,Register.class);
-                 startActivity(intent);
-             }
-         });
+        DocumentReference df = FirebaseFirestore.getInstance().collection("Users").document(fAuth.getCurrentUser().getUid()
+        );
+        DocumentSnapshot documentSnapshot = null;
+        if(documentSnapshot.getString("isAdmin")!=null || documentSnapshot.getString("isUser")!=null) {
+            Intent intent=new Intent(MainActivity.this,Login.class);
+            startActivity(intent);
+        }
+
+            btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    Intent intent = new Intent(MainActivity.this, Register.class);
+                    startActivity(intent);
+                }
+            });
 
         }
 

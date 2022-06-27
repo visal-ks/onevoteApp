@@ -18,7 +18,7 @@ public class Menu extends AppCompatActivity {
         poll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Menu.this,AdminCreateCandidates.class);
+                Intent intent=new Intent(Menu.this,Userseecandidates.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
                 finish();
