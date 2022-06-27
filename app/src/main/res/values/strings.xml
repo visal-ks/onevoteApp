@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My</string>
+    <string name="register">REGISTER</string>
+    <string name="login">LOGIN</string>
+    <string name="position_appearing_for">Position appearing for</string>
+    <string name="student_name">Student name</string>
+    <string name="department">Department</string>
+    <string name="use_your_fingerprint">Use Your Fingerprint</string>
+    <string name="name">Name</string>
+    <string name="update_details">Update Details</string>
+</resources>

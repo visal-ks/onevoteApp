@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="346dp"
+        android:layout_height="627dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13"
+
+
+        >
+
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dept"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="109dp"
+            android:text="VOTE" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="-174dp"
+            android:layout_marginTop="41dp"
+            android:layout_toEndOf="@+id/img"
+            android:text="@string/position_appearing_for"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/dept"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/position"
+            android:layout_marginStart="-176dp"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@+id/img"
+            android:text="@string/department"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="51dp"
+            android:text="@string/student_name"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img"
+            android:layout_width="105dp"
+            android:layout_height="104dp"
+            android:layout_centerHorizontal="true"
+
+            android:src="@mipmap/ic_launcher"
+            android:visibility="visible"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

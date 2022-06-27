@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple_500"
+
+        android:gravity="center"
+        android:text="@string/update_details"
+        android:textColor="#FFF"
+
+        android:textSize="40sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:gravity="center"
+
+        android:text="@string/name"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@drawable/rounded"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:id="@+id/name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:gravity="center"
+
+        android:text="@string/position_appearing_for"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        android:id="@+id/pos"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:gravity="center"
+
+        android:text="@string/department"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:id="@+id/dept"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:gravity="center"
+
+        android:text="Image url"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:id="@+id/img1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/update"
+        android:text="UPDATE"
+        android:textSize="24sp"
+
+     />
+
+
+</LinearLayout>

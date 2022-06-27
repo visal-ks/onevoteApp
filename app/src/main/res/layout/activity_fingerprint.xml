@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".Fingerprint">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:text="@string/use_your_fingerprint"
+        android:textColor="@color/black"
+        android:textSize="38sp" />
+
+    <ImageView
+        android:layout_width="119dp"
+        android:layout_height="123dp"
+
+
+        android:src="@drawable/ic_baseline_fingerprint_24" />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="@color/black"
+       android:id="@+id/text_msg"/>
+    <Button
+        android:id="@+id/Loginbtn"
+        android:text="Login"
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
