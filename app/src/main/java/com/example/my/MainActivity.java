@@ -8,9 +8,6 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity {
    Button btn;
@@ -23,16 +20,16 @@ public class MainActivity extends AppCompatActivity {
         btn=findViewById(R.id.btn);
         FirebaseAuth fAuth = null;
 
-        DocumentReference df = FirebaseFirestore.getInstance().collection("Users").document(fAuth.getCurrentUser().getUid()
+/*        DocumentReference df = FirebaseFirestore.getInstance().collection("Users").document(fAuth.getCurrentUser().getUid()
         );
         DocumentSnapshot documentSnapshot = null;
         if(documentSnapshot.getString("isAdmin")!=null || documentSnapshot.getString("isUser")!=null) {
             Intent intent=new Intent(MainActivity.this,Login.class);
             startActivity(intent);
-        }
+       }*/
 
             btn.setOnClickListener(new View.OnClickListener() {
-                @Override
+               // @Override
                 public void onClick(View view) {
 
                     Intent intent = new Intent(MainActivity.this, Register.class);

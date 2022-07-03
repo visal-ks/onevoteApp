@@ -125,7 +125,7 @@
         android:background="@color/black"
         android:backgroundTint="@color/black"
         android:ems="10"
-        android:hint="Password"
+        android:hint="   Password"
         android:inputType="textPassword"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"

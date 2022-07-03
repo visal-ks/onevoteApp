@@ -8,26 +8,45 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="OneVote"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.My"
         tools:targetApi="31">
         <activity
+            android:name=".Resultforadmin"
+            android:exported="false" />
+        <activity
+            android:name=".Forgot"
+            android:exported="false" />
+        <activity
+            android:name=".finger"
+            android:exported="false" />
+        <activity
+            android:name=".AddActivity"
+            android:exported="false"
+            android:label="New Record"
+            android:parentActivityName=".AdminCreateCandidates" />
+        <activity
             android:name=".Admenu"
             android:exported="false" />
         <activity
             android:name=".AdminCreateCandidates"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Manage Nominees"
+            android:parentActivityName=".Admenu" />
         <activity
             android:name=".AdminMenu"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Admin Menu"
+            android:parentActivityName=".Login" />
         <activity
             android:name=".Fingerprint"
             android:exported="false" />
         <activity
             android:name=".Menu"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Menu" />
         <activity
             android:name=".item"
             android:exported="false" />
@@ -36,7 +55,9 @@
             android:exported="false" />
         <activity
             android:name=".Userseecandidates"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Poll Booth"
+            android:parentActivityName=".Menu" />
         <activity
             android:name=".google_services"
             android:exported="false" />
@@ -45,10 +66,12 @@
             android:exported="false" />
         <activity
             android:name=".Login"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Login" />
         <activity
             android:name=".Register"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Register" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
@@ -63,8 +86,8 @@
         </activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

@@ -1,5 +1,6 @@
 package com.example.my;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -23,13 +24,14 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class Login extends AppCompatActivity {
-    TextView createRegister;
+    TextView createRegister,forgot;
 
     FirebaseFirestore fauth;
     EditText lemail,lPassword;
     Button Loginbtn;
     FirebaseAuth fAuth;
     FirebaseUser fuser;
+    ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,8 +41,16 @@ public class Login extends AppCompatActivity {
         lPassword=findViewById(R.id.lPassword);
         fAuth=FirebaseAuth.getInstance();
         Loginbtn=findViewById(R.id.Loginbtn);
+        progressDialog = new ProgressDialog(this);
 
         createRegister=findViewById(R.id.createRegister);
+        forgot=findViewById(R.id.forgot);
+        forgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Login.this,Forgot.class));
+            }
+        });
         createRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,7 +81,10 @@ public class Login extends AppCompatActivity {
 
 
                                 if (FirebaseAuth.getInstance().getCurrentUser().isEmailVerified()) {
-
+                                    progressDialog.setMessage("Logging in");
+                                    progressDialog.setTitle("LOGIN");
+                                    progressDialog.setCanceledOnTouchOutside(false);
+                                    progressDialog.show();
                                     sendUserToNextActivity();
                                 } else {
                                     Toast.makeText(Login.this, "Please verify your email to login", Toast.LENGTH_LONG).show();
@@ -106,21 +119,24 @@ public class Login extends AppCompatActivity {
     }
 
     private void checkUserAccessLevel(String uid) {
-        DocumentReference df = FirebaseFirestore.getInstance().collection("Users").document(fAuth.getCurrentUser().getUid()
+       DocumentReference df = FirebaseFirestore.getInstance().collection("Users").document(fAuth.getCurrentUser().getUid()
         );
         df.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 Log.d("TAG","onSuccess"+documentSnapshot.getData());
-                if(documentSnapshot.getString("isAdmin")!=null)
-                {
-                    Intent intent = new Intent(Login.this,Admenu.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+
+                if(documentSnapshot.getString("Isuser")!=null){
+                    Intent intent=new Intent(Login.this,finger.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
                 }
-                if(documentSnapshot.getString("isUser")!=null){
-                    Intent intent=new Intent(Login.this,Menu.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                if(documentSnapshot.getString("IsAdmin")!=null)
+                {
+
+                    Intent intent = new Intent(Login.this,Admenu.class);
+
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
                 }
             }

@@ -93,6 +93,7 @@ public class adminadapter extends FirebaseRecyclerAdapter<Model,adminadapter.myv
                  map.put("Dept",dept.getText().toString());
                  map.put("url",url.getText().toString());
 
+
                      FirebaseDatabase.getInstance().getReference().child("Nominees").child(getRef(position).getKey()).updateChildren(map)
                              .addOnSuccessListener(new OnSuccessListener<Void>() {
                                  @Override

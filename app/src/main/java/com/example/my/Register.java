@@ -29,7 +29,9 @@ public class Register extends AppCompatActivity {
     EditText Fullname,Email,Password,Password2;
     Button Registerbtn;
    String namepattern="^([A-Za-z]{1}[A-Za-z\\d_]*\\.)+[A-Za-z][A-Za-z\\d_]*$";
+
     String emailPattern="[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+
     ProgressDialog progressDialog;
 
     FirebaseAuth mAuth;
@@ -132,7 +134,8 @@ public class Register extends AppCompatActivity {
                                     Map<String,Object> userinfo=new HashMap<>();
                                     userinfo.put("Fullname",ffname);
                                     userinfo.put("Emailid",email);
-                                    userinfo.put("Isuser",1);
+                                    userinfo.put("Isuser","1");
+                                    userinfo.put("votestatus","0");
                                     df.set(userinfo);
 
 

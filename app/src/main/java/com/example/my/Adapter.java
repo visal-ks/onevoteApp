@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -15,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.auth.FirebaseAuth;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -28,6 +28,7 @@ public class Adapter extends FirebaseRecyclerAdapter<Model,Adapter.myviewholder>
     public Adapter(@NonNull FirebaseRecyclerOptions<Model> options) {
         super(options);
     }
+    FirebaseAuth fauth;
     public boolean clicked=false;
     @Override
 
@@ -50,7 +51,7 @@ public class Adapter extends FirebaseRecyclerAdapter<Model,Adapter.myviewholder>
         holder.cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(view.getContext(), "Success", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(view.getContext(), "Success", Toast.LENGTH_SHORT).show();
 
 
 
@@ -129,7 +130,7 @@ public class Adapter extends FirebaseRecyclerAdapter<Model,Adapter.myviewholder>
             name= itemView.findViewById(R.id.nametxt);
             position= itemView.findViewById(R.id.positiontxt);
             dept= itemView.findViewById(R.id.depttxt);
-
+           cv=itemView.findViewById(R.id.cv);
             edit= itemView.findViewById(R.id.edit);
             delete=itemView.findViewById(R.id.delete);
 

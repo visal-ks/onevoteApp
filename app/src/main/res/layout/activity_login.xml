@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/cv"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login">
 
     <Button
         android:id="@+id/Loginbtn"
-        android:layout_width="150dp"
+        android:layout_width="186dp"
         android:layout_height="48dp"
         android:layout_marginBottom="168dp"
         android:background="@color/teal_700"
@@ -19,7 +20,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lPassword"
-        app:layout_constraintVertical_bias="0.401" />
+        app:layout_constraintVertical_bias="0.244" />
 
     <EditText
         android:id="@+id/lPassword"
@@ -92,16 +93,30 @@
 
     <TextView
         android:id="@+id/createRegister"
-        android:layout_width="200dp"
+        android:layout_width="167dp"
         android:layout_height="39dp"
-        android:text="Not Registered?Register Here"
-        android:textColor="#171617"
+        android:layout_marginTop="28dp"
+        android:text="Register"
+        android:textColor="#F44336"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/Loginbtn"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="@+id/Loginbtn"
-        app:layout_constraintTop_toBottomOf="@+id/Loginbtn"
-        app:layout_constraintVertical_bias="0.188" />
+        app:layout_constraintTop_toBottomOf="@+id/Loginbtn" />
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="167dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:text="Forgot Password?"
+        android:textColor="#F44336"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/createRegister"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/createRegister"
+        app:layout_constraintTop_toBottomOf="@+id/createRegister" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

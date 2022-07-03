@@ -2,6 +2,7 @@ package com.example.my;
 
 public class Model {
     String Name,Position,Dept,Sem,url;
+    int count;
   Model(){}
 
 
@@ -11,8 +12,11 @@ public class Model {
         Dept = dept;
         Sem = sem;
         this.url = url;
+
     }
 
+
+    public int getCount(){return count;}
     public String getName() {
         return Name;
     }

@@ -8,10 +8,14 @@
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/drawable/ic_image2vectorsplit.xml" value="0.121" />
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/drawable/rounded.xml" value="0.223" />
+        <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/Resultforadmin.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/activity_add.xml" value="0.19084315503173163" />
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/activity_admenu.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/activity_admin_create_candidates.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/activity_adminmenu.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/activity_finger.xml" value="0.1" />
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/activity_fingerprint.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/activity_forgot.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/activity_google_services.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/activity_item.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/activity_login.xml" value="0.264" />
@@ -20,13 +24,15 @@
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/activity_main_model.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/activity_menu.xml" value="0.2" />
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/activity_resultforadmin.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/activity_userseecandidates.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/activity_welcomeback.xml" value="0.2115036231884058" />
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/item.xml" value="0.2" />
-        <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/item1.xml" value="0.15775972637879435" />
+        <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/item1.xml" value="0.2" />
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/item2.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/updatepop.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/layout/votetime.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Users/Visak/AndroidStudioProjects/My/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>
